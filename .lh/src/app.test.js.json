@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app.test.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1770661931983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1770661931983,
+            "name": "Commit-0",
+            "content": "const app = require(\"./app.test\");\r\nconst request = require(\"supertest\");\r\n\r\ntest(\"GET / returns Hello CI/CD!\", async () => {\r\n  const response = await request(app).get(\"/\");\r\n  expect(response.text).toBe(\"Hello CI/CD!\");\r\n});\r\n"
+        }
+    ]
+}
